@@ -1,0 +1,426 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+  font-family: "Belleza";
+  src: url("../font/Belleza-Regular.ttf");
+}
+@font-face {
+  font-family: "Goku";
+  src: url("../font/Goku.ttf");
+}
+@font-face {
+  font-family: "Glamore";
+  src: url("../font/Glamore.ttf");
+}
+@font-face {
+  font-family: "A auto signature";
+  src: url("../font/aAutoSignature.ttf");
+}
+@font-face {
+  font-family: "Goku stencil";
+  src: url("../font/Goku\ Stencil.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #ffffff;
+  --lbrown: #977b65;
+  --dbrown: #58352b;
+}
+ul {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+}
+h1 {
+  font-size: 85px;
+}
+h2 {
+  font-size: 114px;
+  /* margin-bottom: 50px; */
+  font-weight: 400;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+h4 {
+}
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.section_padding {
+  padding: 120px 0;
+}
+.btn2 {
+  padding: 17px 52px;
+  border: 1px solid var(--lbrown);
+  color: var(--lbrown);
+}
+.btn1 {
+  border: 1px solid white;
+  color: var(--white);
+  padding: 20px 70px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 -20px;
+}
+.col {
+  padding: 0 20px;
+}
+.col-33 {
+  width: 33.33%;
+}
+.col-50 {
+  width: 50%;
+}
+.col-25 {
+  width: 25%;
+}
+/* navbar  */
+.navbar {
+  padding: 20px 0;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+nav a {
+  color: var(--white);
+}
+.navbar_brand a p {
+  font-family: "belleza";
+  font-size: 41px;
+  text-transform: uppercase;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar nav ul {
+  display: flex;
+  gap: 66px;
+}
+.nav_items ul li {
+  font-family: "Roboto";
+  font-size: 17px;
+}
+/* banner */
+.banner {
+  min-height: 110vh;
+  background-image: url("../assets/01.\ Hero\ Section.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner_content {
+  text-align: center;
+  color: var(--white);
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.banner .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.banner_content h1 {
+  font-family: "Goku stencil";
+  color: var(--white);
+}
+.banner_content h2 {
+  font-family: "Glamore";
+  letter-spacing: 5%;
+  color: var(--white);
+}
+.banner_content a {
+  font-family: "Roboto";
+}
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+}
+.arrow_left {
+  left: 40px;
+}
+.arrow_right {
+  right: 40px;
+}
+/* shades of colors  */
+.shades-of-elegance .col:last-child {
+  width: 60%;
+  overflow: visible;
+}
+.shades-of-elegance .col:first-child {
+  width: 40%;
+}
+.c-photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-right: 40px;
+  /* transform: translateX(60px); */
+}
+.colors {
+  padding-left: 40px;
+  width: 400px;
+  transform: translateY(50%);
+}
+.colors > p:nth-child(1) {
+  font-family: "A auto signature";
+  font-size: 50px;
+  color: var(--dbrown);
+}
+.colors > p:nth-child(3) {
+  color: var(--lbrown);
+  margin-bottom: 50px;
+}
+.colors h2 {
+  font-family: "Belleza";
+  font-size: 56px;
+  color: var(--dbrown);
+  width: 300px;
+  margin-bottom: 20px;
+}
+.dropdown a {
+  color: var(--dbrown);
+}
+.colors .dropdown {
+  position: relative;
+}
+.colors .dropdown-c {
+  display: none;
+  position: absolute;
+  top: 20px;
+}
+.dropdown:hover .dropdown-c {
+  display: block;
+  color: var(--dbrown);
+}
+.c-photos img:first-child {
+  width: 60%;
+  object-fit: cover;
+}
+.c-photos img:last-child {
+  width: 40%;
+  object-fit: cover;
+}
+/* banner 2  */
+.banner2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner2 .container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.b2-content {
+  width: 100%;
+  display: flex;
+}
+
+.b2left img,
+.b2right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+/* new */
+.newcontent > p:nth-child(1) {
+  font-family: "A auto signature";
+  font-size: 90px;
+  color: var(--lbrown);
+  text-transform: capitalize;
+}
+.newcontent h2 {
+  font-family: "Belleza";
+  font-size: 56px;
+  color: var(--dbrown);
+  /* width:500px; */
+  margin-bottom: 20px;
+}
+.newcontent > p:nth-child(3) {
+  font-size: 19px;
+  color: var(--dbrown);
+  margin-bottom: 50px;
+  width: 450px;
+}
+.newcontent .container {
+  justify-content: center;
+}
+/* banner 3  */
+.banner3 {
+  min-height: 650px;
+  height: 100%;
+  background-image: url("../assets/05..jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* newproducts */
+.newproducts .headingn p {
+  font-family: "A auto signature";
+  font-size: 90px;
+  color: var(--lbrown);
+}
+.newproducts .headingn h2 {
+  font-family: "Belleza";
+  font-size: 56px;
+  color: var(--dbrown);
+  width: 400px;
+  margin-bottom: 76px;
+}
+.ncards {
+  max-width: 341.33px;
+  width: 100%;
+  margin: 0 74px 54px 10px;
+}
+.ncards .cardcontent {
+  display: flex;
+  justify-content: space-between;
+}
+/* banner 4 */
+.banner4 {
+  min-height: 650px;
+  height: 100%;
+  background-image: url("../assets/07..jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* values  */
+.values .valuescontent p {
+  font-family: "A auto signature";
+  font-size: 56px;
+  color: var(--lbrown);
+}
+.values .valuescontent h2 {
+  font-family: "Belleza";
+  font-size: 56px;
+  color: var(--dbrown);
+  width: 900px;
+  margin-bottom: 51px;
+}
+.skills {
+  margin-bottom: 60px;
+}
+.skills .brand,
+.original,
+.experience {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .brand,
+.original,
+.experience p {
+  font-family: "Roboto";
+  font-size: 15px;
+}
+.skills .bbar {
+  width: 80%;
+}
+.skills .obar {
+  width: 90%;
+}
+/* footer  */
+.footer {
+  padding: 120px 0;
+}
+.footer {
+  background-color: black;
+  color: var(--white);
+}
+.footer .heading {
+  font-family: "Belleza";
+  font-size: 30px;
+  margin-bottom: 17px;
+}
+.footer .first p:nth-child(2) {
+  margin-bottom: 50px;
+  max-width: 180px;
+}
+.footer .first ul {
+  display: flex;
+  gap: 17px; 
+}
+.footer .first ul li a{
+  color: var(--white);
+  font-family: "Roboto";
+  font-size: 13px;
+}
+.second ul li a{
+  color: var(--white);
+  font-family: "Roboto";
+  font-size: 15px;
+  margin-bottom: 17px;
+}
+.third ul li a{
+  color: var(--white);
+  font-family: "Roboto";
+  font-size: 15px;
+  margin-bottom: 17px;
+}
+.fourth form label{
+  display: block;
+}
+.fourth form input, label{
+  margin-bottom: 17px;
+}
+.fourth form input[type=email]{
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 17px;
+  background: transparent;
+}
+.fourth form .btn{
+  border: none;
+  background: transparent;
+  border: 1px solid var(--dbrown);
+  color: var(--dbrown);
+  padding: 10.5px 62.5px;
+}
+.footer .row{
+  margin-bottom: 137px;
+}
+.copyright a{
+  color: var(--white);
+  text-decoration: underline;
+}
+.footer .copyright {
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid var(--white);
+  padding-top: 17px;
+}
