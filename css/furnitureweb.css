@@ -125,6 +125,15 @@ nav {
   font-family: "Roboto";
   font-size: 17px;
 }
+.navbar .navbar_brand a:hover{
+  color: var(--lbrown);
+  transform: scale(1.2);
+}
+.nav_items ul li a:hover{
+  color: var(--lbrown);
+  border-bottom: 2px solid var(--lbrown);
+  transform: scale(1.2);
+}
 /* banner */
 .banner {
   min-height: 110vh;
@@ -133,6 +142,10 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+}
+.banner_content a:hover{
+  border: 1px solid var(--dbrown);
+  color: var(--dbrown);
 }
 .banner_content {
   text-align: center;
